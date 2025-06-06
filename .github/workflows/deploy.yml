@@ -17,4 +17,4 @@ jobs:
       - name: Install epenencies 
         run: pip install flask 
       - name: run Docker build
-        run: dcoker build -t devops-porfolio .
+        run: dcoker build -t devops-project .
