@@ -10,11 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - name: Set up Python
-        uses: action/setup-python@v2
+        uses: actions/setup-python@v2
         with:
           python-version: '3.9'
-      - name: Install epenencies 
-        run: pip install flask 
-      - name: run Docker build
-        run: dcoker build -t devops-project .
+
+      - name: Install depenencies 
+        run: pip install flask
+
+      - name: Run Docker build
+        run: docker build -t devops-project .
